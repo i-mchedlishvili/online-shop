@@ -1,0 +1,57 @@
+.heart {
+    &:hover {
+        color: #ff4c3b;
+        cursor: pointer;
+    }
+}
+
+.user {
+    &:hover {
+        color: #ff4c3b;
+        cursor: pointer;
+    }
+}
+
+.user-p {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.burger-bar {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.logo {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header-ul {
+    li {
+        font-size: 15px;
+        min-width: 106px;
+        text-align: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            color: #ff4c3b;
+        }
+        i {
+            margin-left: 7px;
+            font-size: 12px;
+        }
+    }
+}
+
+.header-icons {
+    min-width: 12vw;
+    i {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
