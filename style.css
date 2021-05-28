@@ -52,6 +52,44 @@
   cursor: pointer !important;
 }
 
+.color-selector ul li {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid #444444;
+}
+
+.color-selector ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.color-selector ul .color-1 {
+  background-color: black;
+}
+.color-selector ul .color-2 {
+  background-color: gray;
+}
+.color-selector ul .color-3 {
+  background-color: red;
+}
+.color-selector ul .color-4 {
+  background-color: purple;
+}
+.color-selector ul .color-5 {
+  background-color: blue;
+}
+.color-selector ul .color-6 {
+  background-color: yellow;
+}
+.color-selector ul .color-7 {
+  background-color: green;
+}
+
 @media only screen and (max-width: 833px) {
   .header-ul {
     display: none !important;
