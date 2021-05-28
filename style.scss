@@ -30,6 +30,10 @@
     }
 }
 
+.btn {
+    outline: none !important;
+}
+
 .header-ul {
     li {
         font-size: 15px;
@@ -55,3 +59,17 @@
         }
     }
 }
+
+.hover-pointer:hover {
+    cursor: pointer !important;
+}
+
+
+@media only screen and (max-width: 833px) {
+    .header-ul {
+      display: none !important;
+    }
+    .side-banner {
+        display: none !important;
+    }
+  }

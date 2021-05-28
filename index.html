@@ -17,6 +17,12 @@
       type="text/css"
     />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -29,19 +35,18 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
+    
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./resetCSS.css" />
   </head>
   <body>
+
+    
     <div class="container-fluid p-0 mb-5">
 
         <div
           class="
+          row
             d-flex
             py-3
             px-5
@@ -52,13 +57,13 @@
             flex-wrap
           "
         >
-          <div class="d-flex flex-wrap">
+          <div class="col-lg-8 col-md-12 d-flex flex-wrap">
             <p>Welcome to Our store Multikart</p>
             <p class="ms-5">
               <i class="fas fa-phone-alt text-danger"></i> Call Us: 123-456-7890
             </p>
           </div>
-          <div class="d-flex flex-wrap">
+          <div class="col-lg-4 col-md-12 d-flex flex-wrap">
             <i class="fas fa-heart d-flex align-items-center ms-5 heart"></i>
             <p class="ms-5 user-p">
               <i class="fas fa-user user"></i>&nbsp;&nbsp;My Account
@@ -108,43 +113,48 @@
         </div>
     </div>
 
-<div class="container-fluid d-flex bg-light px-5">
-  <div class="d-flex flex-column">
+
+   <div class="container d-flex">
+
+     <div class="row d-flex">
+
+<div class="col-lg-3 col-md-3">
+  <div class="d-flex flex-column bg-light mb-5">
     <div class="">
         <p>
-            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  BRAND     
+            <a class="btn d-flex justify-content-between fw-bold p-4 shadow-none" data-bs-toggle="collapse" href="#collapse-brand" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  BRAND   <i class="fas fa-chevron-down"></i>   
             </a>
                     
                 </p>
-                <div class="collapse" id="collapseExample">
-                <div class="card card-body">
+                <div class="collapse" id="collapse-brand">
+                <div class="card card-body  bg-light border border-0">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="collapse-brand">
                         <label class="form-check-label" for="flexCheckDefault">
                           ZARA
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="collapse-brand">
                         <label class="form-check-label" for="flexCheckChecked">
                           VERA-MODA
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="collapse-brand">
                         <label class="form-check-label" for="flexCheckChecked">
                           FOREVER-21
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="collapse-brand">
                         <label class="form-check-label" for="flexCheckChecked">
                           ROADSTER
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="collapse-brand">
                         <label class="form-check-label" for="flexCheckChecked">
                           ONLY
                         </label>
@@ -155,42 +165,58 @@
 
             <div class="">
                 <p>
-                    <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                         COLOR    
+                    <a class="btn d-flex justify-content-between fw-bold p-4 shadow-none" data-bs-toggle="collapse" href="#collapse-color" role="button" aria-expanded="false" aria-controls="collapseExample">
+                         COLOR    <i class="fas fa-chevron-down"></i>
                     </a>
-                            
                         </p>
+                        <div class="collapse" id="collapse-color">
+                          <div class="card card-body bg-light border border-0">
+                              <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="collapse-color">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    S 
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="collapse-color">
+                                  <label class="form-check-label" for="flexCheckChecked">
+                                    M
+                                  </label>
+                                </div>
+                                                             
+                          </div>
+                          </div>
                     </div>
 
                     <div class="">
                         <p>
-                            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                  SIZE    
+                            <a class="btn d-flex justify-content-between fw-bold p-4 shadow-none" data-bs-toggle="collapse" href="#collapse-size" role="button" aria-expanded="false" aria-controls="collapse-size">
+                                  SIZE   <i class="fas fa-chevron-down"></i> 
                             </a>
                                     
                                 </p>
-                                <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
+                                <div class="collapse" id="collapse-size">
+                                <div class="card card-body bg-light border border-0">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="collapse-size">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                          S
+                                          S 
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input" type="checkbox" value="" id="collapse-size">
                                         <label class="form-check-label" for="flexCheckChecked">
                                           M
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input" type="checkbox" value="" id="collapse-size">
                                         <label class="form-check-label" for="flexCheckChecked">
                                           L
                                         </label>
                                       </div>
                                       <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <input class="form-check-input" type="checkbox" value="" id="collapse-size">
                                         <label class="form-check-label" for="flexCheckChecked">
                                           XL
                                         </label>
@@ -201,28 +227,145 @@
                             </div>
 </div>
 
-<div class="">
-<div class="">
-  <img src="./assets/images/banner.jpg" class="w-75">
+<div class="w-100">
+  <p class="fw-bold">NEW PRODUCT</p>
+  <hr>
+</div>
+
+<div class="d-flex w-100 mb-5 pe-5">
+  
+  <div class="me-2">
+    <img src="./assets/images/side-pictures/1.jpg" class="w-100">
+  </div>
+
+  <div class="d-flex flex-column justify-content-center">
+<div class="d-flex mb-1">
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-muted"></i>
+</div>
+<p class="">Candy Red Solid Tshirt</p>
+<p class="mb-2 fw-bold">$89.00</p>
+
+</div>
+
+</div>
+
+<div class="d-flex w-100 mb-5 pe-5">
+  
+  <div class="me-2">
+    <img src="./assets/images/side-pictures/2.jpg" class="w-100">
+  </div>
+
+  <div class="d-flex flex-column justify-content-center">
+<div class="d-flex mb-1">
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-muted"></i>
+</div>
+<p class="">Candy Red Solid Tshirt</p>
+<p class="mb-2 fw-bold">$89.00</p>
+
+</div>
+
+</div>
+
+<div class="d-flex w-100 mb-5 pe-5">
+  
+  <div class="me-2">
+    <img src="./assets/images/side-pictures/3.jpg" class="w-100">
+  </div>
+
+  <div class="d-flex flex-column justify-content-center">
+<div class="d-flex mb-1">
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-warning"></i>
+  <i class="fas fa-star text-muted"></i>
+</div>
+<p class="">Candy Red Solid Tshirt</p>
+<p class="mb-2 fw-bold">$89.00</p>
+
+</div>
+
+</div>
+
+<div class="w-100 side-banner">
+  <img src="./assets/images/side-banner.png" class="w-100"> 
+ </div>
+
+
 </div>
 
 
+<div class="col-lg-9 col-md-9">
+  <div class="w-100 mb-3">
+    <img src="./assets/images/banner.jpg" class="w-100">
+  </div>
+  <p class="fw-bold mb-3">BIGGEST DEALS ON TOP BRANDS</p>
+  <p class="text-muted mb-4">The trick to choosing the best wear for yourself is to keep in mind your body type, individual style, occasion <br>
+     and also the time of day or weather. In addition to eye-catching products from top brands, we also offer an <br>
+     easy 30-day return and exchange policy, free and fast shipping across all pin codes, cash or card on delivery <br>
+      option, deals and discounts, among other perks. So, sign up now and shop for westarn wear to your heart’s <br> 
+      content on Multikart.</p>
 
+<div class="container-fluid mb-5">
+<div class="row">
 
+    <div class="col-12 text-center py-4 border border-secondary border-bottom-0">
+      <p>Showing Products 1-24 Of 10 Result</p>
+    </div>
+
+    <div class="row p-0 m-0">
+
+      <div class="col-5 border border-secondary d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+        <i class="fa fa-th grid-layout-view me-2 hover-pointer" id="sortFourCols"></i>
+        <i class="fa fa-list-ul list-layout-view hover-pointer" id="sortFullCol"></i>
+      </div>
+      <div class="d-flex align-items-center">
+        <img src="./assets/icons/sort-icons/2.png" class="me-2 hover-pointer" id="twoColumn">
+        <img src="./assets/icons/sort-icons/3.png" class="me-2 hover-pointer" id="threeColumn">
+        <img src="./assets/icons/sort-icons/4.png" class="hover-pointer" id="fourColumn">
+      </div>
+      </div>
+
+      <div class="col-4 p-0">
+        <select class="py-3 col-12 px-2 border border-secondary">
+          <option>24 Products Par Page</option>
+          <option>50 Products par Page</option>
+          <option>100 Products Par Page</option>
+        </select>
+      </div>
+
+      <div class="col-3 p-0">
+        <select class="py-3 px-2 col-12 border border-secondary" id="selection" onchange="getQuantity(this)">
+          <option value="5">Sorting items</option>
+          <option value="10">10 Products</option>
+          <option value="15">15 Products</option>
+          <option value="20">20 Products</option>
+        </select>      
+      </div>
+
+    </div>
+
+  </div>
 </div>
 
-        </div>
+      <div class="d-flex mb-5">
+        <div class="row search-cont">
+    </div>
+    </div>
+  
+</div>
 
-
-
-
-
-
-
-
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</div>
+</div>
     <script src="./scripts.js"></script>
     </body>
     </html>
