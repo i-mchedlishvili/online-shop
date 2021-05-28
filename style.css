@@ -1,0 +1,170 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.heart:hover {
+  color: #ff4c3b;
+  cursor: pointer;
+}
+
+.user:hover {
+  color: #ff4c3b;
+  cursor: pointer;
+}
+
+.user-p:hover {
+  cursor: pointer;
+}
+
+.user:hover {
+  color: #ff4c3b;
+  cursor: pointer;
+}
+
+.burger-bar:hover {
+  cursor: pointer;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header-ul li {
+  font-size: 15px;
+  min-width: 106px;
+  text-align: center;
+  align-items: center;
+}
+
+.header-ul li:hover {
+  cursor: pointer;
+  color: #ff4c3b;
+}
+
+.header-ul li i {
+  margin-left: 7px;
+  font-size: 12px;
+}
+
+.header-icons {
+  min-width: 12vw;
+}
+
+.header-icons i:hover {
+  cursor: pointer;
+}
+
+.shop-now {
+  z-index: 1;
+  top: 32%;
+  left: 7%;
+}
+
+.shop-now:hover {
+  cursor: default;
+}
+
+.welcome-to-fashion {
+  letter-spacing: 0.5em !important;
+}
+
+.fashion {
+  font-size: 60px;
+}
+
+.shop-now-button {
+  background-color: #ff4c3b;
+}
+
+.shop-now-button:hover {
+  background-color: white !important;
+  color: black;
+  border: 1px solid red;
+}
+
+.line {
+  width: 7vw;
+  height: 2px;
+  background-color: #ff4c3b !important;
+  align-self: center;
+}
+
+.parallax {
+  background-image: url("./assets/images/parallax.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  cursor: default;
+}
+
+.parallax-text h1 {
+  font-size: 85px;
+  color: #ff4c3b;
+}
+
+.parallax-text h2 {
+  font-size: 50px;
+}
+
+.parallax-text p {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  margin-top: 10px;
+}
+
+.casual:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: #ff4c3b;
+}
+
+.service-icons {
+  padding-left: 30px;
+  padding-right: 40px;
+  border-right: 1px solid gray;
+}
+
+.service-icons i {
+  font-size: 50px;
+  color: #ff4c3b;
+}
+
+.blog-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-image {
+  width: 100%;
+}
+
+.def-height {
+  height: 20px;
+}
+
+.footer-background-color {
+  background-color: #f9f9f9;
+}
+
+.footer ul li:hover {
+  cursor: pointer;
+  text-decoration: underline red;
+}
+
+@media only screen and (max-width: 833px) {
+  .header-ul {
+    display: none !important;
+  }
+}
