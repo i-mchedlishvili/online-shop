@@ -26,7 +26,6 @@
 
 .header-ul li {
   font-size: 15px;
-  min-width: 106px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -41,9 +40,6 @@
   font-size: 12px;
 }
 
-.header-icons {
-  min-width: 12vw;
-}
 .header-icons i:hover {
   cursor: pointer;
 }
@@ -90,6 +86,19 @@
   background-color: green;
 }
 
+@media only screen and (min-width: 992px) {
+  .welcome-title {
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
+  }
+
+  .account {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+}
 @media only screen and (max-width: 833px) {
   .header-ul {
     display: none !important;
@@ -97,5 +106,30 @@
 
   .side-banner {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .welcome-title {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .welcome-title p {
+    margin-left: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .heart {
+    margin-left: 0 !important;
+  }
+
+  .user-p {
+    margin-left: 5px !important;
   }
 }

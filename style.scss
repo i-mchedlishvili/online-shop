@@ -37,7 +37,7 @@
 .header-ul {
     li {
         font-size: 15px;
-        min-width: 106px;
+        
         text-align: center;
         align-items: center;
         &:hover {
@@ -52,7 +52,6 @@
 }
 
 .header-icons {
-    min-width: 12vw;
     i {
         &:hover {
             cursor: pointer;
@@ -106,13 +105,14 @@
     }
 }
 
-
-
-
-
-
-
-
+@media only screen and (min-width: 992px) {
+    .welcome-title {
+        justify-content: left !important;
+    }
+    .account {
+       justify-content: flex-end !important;
+    }
+  }
 
 
 @media only screen and (max-width: 833px) {
@@ -123,3 +123,25 @@
         display: none !important;
     }
   }
+
+
+  @media only screen and (max-width: 576px) {
+        .welcome-title {
+            p {
+                margin-left: 0 !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+            display: flex !important;
+            flex-wrap: wrap;
+            align-items: center !important;
+           
+        }
+        .heart {
+            margin-left: 0 !important;
+        }
+        .user-p {
+            margin-left: 5px !important;
+        }
+  }
+
