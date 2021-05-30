@@ -112,6 +112,7 @@
                 <p class="col fw-bold text-muted">COLLECTION</p>
             </div>
         </div>
+
     </div>
 
 
@@ -359,7 +360,7 @@
       </div>
 
       <div class="col-3 p-0">
-        <select class="py-3 px-2 col-12 border border-secondary" id="selection" onchange="getQuantity(this)">
+        <select class="py-3 px-2 col-12 border border-secondary" id="selection" onchange="generateColls(this)">
           <option value="5">Sorting items</option>
           <option value="10">10 Products</option>
           <option value="15">15 Products</option>
@@ -373,7 +374,11 @@
 </div>
 
       <div class="d-flex mb-5">
-        <div class="row search-cont">
+      
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2" id="search-cont">
+
+
+
     </div>
     </div>
   
@@ -381,6 +386,7 @@
 
 </div>
 </div>
+
     <script src="./scripts.js"></script>
     </body>
     </html>
