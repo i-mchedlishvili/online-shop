@@ -7,7 +7,13 @@ const fullColsGenerate = document.querySelector('#sortFullCol');
 const sortFourCols = document.querySelector('#sortFourCols');
 
 
+function reloadPage() {
+  const clearPage = document.querySelector('#search-cont');
+  clearPage.innerHTML = '';
+}
+
 function generateColls() {
+  reloadPage();
 let selValue = document.querySelector('#selection');
   let strUser = selValue.options[selValue.selectedIndex].value;
   apiURL = 'https://fakestoreapi.com/products?limit=';
@@ -51,6 +57,7 @@ let selValue = document.querySelector('#selection');
     container.innerHTML += template;
 })
 }
+
 generateColls();
 
 twoCols.addEventListener('click', () => container.className = "row row-cols-lg-2 row-cols-md-2 row-cols-sm-2");
